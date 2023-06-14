@@ -1,13 +1,13 @@
-package org.example;
+package org.example.data_structure_1;
 
-public class Queue {
+public class SimpleQueue {
 
     private int size;
     private int rear;
     private int front;
     private int items[];
 
-    Queue(int size){
+    SimpleQueue(int size){
         this.size = size;
         items = new int[size];
         rear = -1;
@@ -71,11 +71,8 @@ public class Queue {
         }
     }
 
-}
-
-class QMain{
     public static void main(String[] args) {
-        Queue q = new Queue(5);
+        SimpleQueue q = new SimpleQueue(5);
 
         q.enQueue(1);
         q.enQueue(2);
