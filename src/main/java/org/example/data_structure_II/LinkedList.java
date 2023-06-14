@@ -31,6 +31,21 @@ public class LinkedList {
             System.out.print(linkedList.head.value + " ");
             linkedList.head = linkedList.head.next;
         }
+
+
+        LinkedList linked = new LinkedList();
+        linked.head = new Node(2);
+        Node sec = new Node(5);
+        Node thr = new Node(7);
+
+        sec.next = thr;
+
+        linked.head.next = sec;
+
+        while(linked.head.next != null){
+            System.out.println("i am the value of linked " +linked.head.value);
+            linked.head = linked.head.next;
+        }
     }
 }
 
