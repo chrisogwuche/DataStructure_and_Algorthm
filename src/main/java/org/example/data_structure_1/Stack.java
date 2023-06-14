@@ -1,4 +1,4 @@
-package org.example;
+package org.example.data_structure_1;
 
 public class Stack {
     private int arr[];
@@ -40,14 +40,11 @@ public class Stack {
         return top+1;
     }
 
-    public void printStack(){
-        for(int i =0; i<= top; i++){
+    public void printStack() {
+        for (int i = 0; i <= top; i++) {
             System.out.println(arr[i]);
         }
     }
-}
-
-class SMain{
     public static void main(String[] args) {
         Stack stack = new Stack(5);
         stack.push(1);
@@ -56,10 +53,8 @@ class SMain{
         stack.push(4);
         stack.push(5);
 
-        System.out.println("element popped: " +stack.pop());
+        System.out.println("element popped: " + stack.pop());
         System.out.println("---------------");
         stack.printStack();
-
-
     }
 }
