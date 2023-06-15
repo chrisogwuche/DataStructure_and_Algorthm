@@ -17,6 +17,7 @@ public class CircularQueue {
         if(front == 0 && rear == size-1){
             return true;
         }
+        // when rear has circled through the array. For instance when rear is at index 3 and front is at index 4;
         if(front == rear+1){
             return true;
         }

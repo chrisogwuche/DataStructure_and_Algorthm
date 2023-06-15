@@ -3,7 +3,7 @@ package org.example.data_structure_1;
 import java.util.ArrayList;
 
 public class PriorityQueue {
-    // Function to heapify the tree
+
     void heapify(ArrayList<Integer> hT, int i) {
         int size = hT.size();
         // Find the largest among root, left child and right child

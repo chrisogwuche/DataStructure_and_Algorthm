@@ -35,6 +35,7 @@ public class SimpleQueue {
                 front = 0;
             }
             rear++;
+            System.out.println(" rear: " +rear);
             items[rear] = x;
         }
     }
