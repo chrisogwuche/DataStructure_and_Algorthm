@@ -14,6 +14,8 @@ class HashTable {
         ht.remove(12);
         System.out.println(ht);
 
+        System.out.println("----------------------------------------------------");
+
         Map<Integer, String> alphabet = new HashMap<>();
         alphabet.put(1,"a");
         alphabet.put(2,"b");
