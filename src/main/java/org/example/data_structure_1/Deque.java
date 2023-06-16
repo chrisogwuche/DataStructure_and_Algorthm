@@ -1,7 +1,7 @@
 package org.example.data_structure_1;
 
 public class Deque {
-    static final int MAX = 100;
+    static final int MAX = 10;
     int arr[];
     int front;
     int rear;

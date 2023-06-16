@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class PriorityQueue {
 
     void heapify(ArrayList<Integer> hT, int i) {
+
         int size = hT.size();
         // Find the largest among root, left child and right child
         int largest = i;
@@ -21,7 +22,7 @@ public class PriorityQueue {
             hT.set(largest, hT.get(i));
             hT.set(i, temp);
 
-            heapify(hT, largest);
+            heapify(hT, largest);  // recursive
         }
     }
 
