@@ -1,14 +1,13 @@
 package org.example.data_structure_1;
 
 public class Deque {
-    static final int MAX = 10;
     int arr[];
     int front;
     int rear;
     int size;
 
     public Deque(int size) {
-        arr = new int[MAX];
+        arr = new int[size];
         front = -1;
         rear = 0;
         this.size = size;
@@ -44,7 +43,7 @@ public class Deque {
 
     void insertrear(int key) {
         if (isFull()) {
-            System.out.println(" Overflow ");
+            System.out.println(" Overflow "); // Overflow means the queue is full
             return;
         }
 
@@ -104,7 +103,7 @@ public class Deque {
 
     int getRear() {
         if (isEmpty() || rear < 0) {
-            System.out.println(" Underflow\n");
+            System.out.println(" Underflow\n"); // this means the queue is empty
             return -1;
         }
         return arr[rear];
