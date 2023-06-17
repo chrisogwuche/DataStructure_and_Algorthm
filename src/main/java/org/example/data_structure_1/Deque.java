@@ -1,5 +1,7 @@
 package org.example.data_structure_1;
 
+import java.util.Queue;
+
 public class Deque {
     int arr[];
     int front;
@@ -132,6 +134,7 @@ public class Deque {
         dq.deletefront();
 
         System.out.println("After delete front element new front become : " + +dq.getFront());
+
 
     }
 }
