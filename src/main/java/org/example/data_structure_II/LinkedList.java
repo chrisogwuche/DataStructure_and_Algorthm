@@ -1,7 +1,7 @@
 package org.example.data_structure_II;
 
 public class LinkedList {
-    // Creating a node
+
     Node head;
 
     static class Node {
