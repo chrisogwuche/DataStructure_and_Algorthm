@@ -1,4 +1,4 @@
-package org.example.data_structure_1;
+package org.example.data_structure_1.queue;
 
 public class SimpleQueue {
 

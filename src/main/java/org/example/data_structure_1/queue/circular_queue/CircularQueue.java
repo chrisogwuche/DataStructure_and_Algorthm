@@ -1,4 +1,4 @@
-package org.example.data_structure_1;
+package org.example.data_structure_1.queue.circular_queue;
 
 public class CircularQueue {
     int size;

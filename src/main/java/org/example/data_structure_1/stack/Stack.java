@@ -1,4 +1,4 @@
-package org.example.data_structure_1;
+package org.example.data_structure_1.stack;
 
 public class Stack {
     private int arr[];

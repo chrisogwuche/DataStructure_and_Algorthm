@@ -1,28 +1,28 @@
-package org.example.data_structure_1;
+package org.example.data_structure_1.queue.priortyqueue;
 
 import java.util.ArrayList;
 
 public class PriorityQueue {
 
-    void heapify(ArrayList<Integer> hT, int i) {
+    void heapify(ArrayList<Integer> arrayList, int i) {
 
-        int size = hT.size();
+        int size = arrayList.size();
         // Find the largest among root, left child and right child
         int largest = i;
         int l = 2 * i + 1;
         int r = 2 * i + 2;
-        if (l < size && hT.get(l) > hT.get(largest))
+        if (l < size && arrayList.get(l) > arrayList.get(largest))
             largest = l;
-        if (r < size && hT.get(r) > hT.get(largest))
+        if (r < size && arrayList.get(r) > arrayList.get(largest))
             largest = r;
 
         // Swap and continue heapifying if root is not largest
         if (largest != i) {
-            int temp = hT.get(largest);
-            hT.set(largest, hT.get(i));
-            hT.set(i, temp);
+            int temp = arrayList.get(largest);
+            arrayList.set(largest, arrayList.get(i));
+            arrayList.set(i, temp);
 
-            heapify(hT, largest);  // recursive
+            heapify(arrayList, largest);  // recursive
         }
     }
 

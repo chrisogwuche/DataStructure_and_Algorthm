@@ -1,6 +1,4 @@
-package org.example.data_structure_1;
-
-import java.util.Queue;
+package org.example.data_structure_1.queue;
 
 public class Deque {
     int arr[];
