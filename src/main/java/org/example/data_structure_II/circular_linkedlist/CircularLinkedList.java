@@ -1,4 +1,4 @@
-package org.example.data_structure_II;
+package org.example.data_structure_II.circular_linkedlist;
 
 public class CircularLinkedList {
 

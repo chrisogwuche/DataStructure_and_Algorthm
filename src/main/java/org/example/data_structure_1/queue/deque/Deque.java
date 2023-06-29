@@ -1,4 +1,4 @@
-package org.example.data_structure_1.queue;
+package org.example.data_structure_1.queue.deque;
 
 public class Deque {
     int arr[];
