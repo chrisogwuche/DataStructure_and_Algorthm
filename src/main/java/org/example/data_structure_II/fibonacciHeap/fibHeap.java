@@ -90,6 +90,12 @@ package org.example.data_structure_II.fibonacciHeap;
         boolean trace;
         node found;
 
+        fibHeap() {
+            min = null;
+            n = 0;
+            trace = false;
+        }
+
         public boolean get_trace() {
             return trace;
         }
@@ -102,11 +108,6 @@ package org.example.data_structure_II.fibonacciHeap;
             return new fibHeap();
         }
 
-        fibHeap() {
-            min = null;
-            n = 0;
-            trace = false;
-        }
 
         private void insert(node x) {
             if (min == null) {
