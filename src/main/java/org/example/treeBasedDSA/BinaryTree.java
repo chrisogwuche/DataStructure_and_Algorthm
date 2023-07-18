@@ -2,19 +2,32 @@ package org.example.treeBasedDSA;
 
 // Tree traversal in Java
 
-class Node {
-    int item;
-    Node left, right;
 
-    public Node(int key) {
-        item = key;
-        left = right = null;
-    }
-}
+//class Node {
+//    int item;
+//    Node left, right;
+//
+//    public Node(int key) {
+//        item = key;
+//        left = right = null;
+//    }
+//}
+
 
 class BinaryTree {
     // Root of Binary Tree
     Node root;
+
+    static class Node {
+        int item;
+        Node left, right;
+
+        public Node(int key) {
+            item = key;
+            left = right = null;
+        }
+
+    }
 
     BinaryTree() {
         root = null;
@@ -57,6 +70,7 @@ class BinaryTree {
     }
 
     public static void main(String[] args) {
+
         BinaryTree tree = new BinaryTree();
         tree.root = new Node(1);
         tree.root.left = new Node(12);
